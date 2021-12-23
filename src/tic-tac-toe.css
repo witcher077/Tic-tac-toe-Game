@@ -1,0 +1,41 @@
+/* .container1{
+	
+	width: 100%;
+	height: 100%;
+	background-color: lightslategrey;
+} */
+.container2 {
+    position: relative;
+    display: flex;
+	flex-direction: column;
+	width: 500px;
+	align-items: center;
+    left: 32%;
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+table td {
+	border: 1px solid grey;
+	width: 100px;
+	height: 100px;
+    background-color: indianred;
+}
+
+
+.para{
+	
+	font-size: 35px;
+	color: rgb(0, 59, 117);
+}
+.para2{
+	color: green;
+}
+.btn{
+ background-color: lightskyblue;
+ border-radius: 5px;
+ height: 30px;
+ width: 110px;
+ font-size:15px;
+}
