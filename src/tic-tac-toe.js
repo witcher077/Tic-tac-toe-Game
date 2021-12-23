@@ -37,14 +37,14 @@ const TicTacToe = () => {
 					squares[pattern[0]] === squares[pattern[1]] &&
 					squares[pattern[1]] === squares[pattern[2]]
 				) {
-					setWinner(`Ta da ! ${squares[pattern[0]]}`);
+					setWinner(`Ta da ! ${squares[pattern[0]]} is winner`);
 				}
 				else if (winner === "" && squares[0] !== "" &&
 					squares[1] !== "" && squares[2] !== "" &&
 					squares[3] !== "" && squares[4] !== "" &&
 					squares[5] !== "" && squares[6] !== "" &&
 					squares[7] !== "" && squares[8] !== "") {
-					setWinner("Ooops ! No one");
+					setWinner("Ooops ! Its a draw");
 				}
 
 			});
@@ -112,7 +112,7 @@ const TicTacToe = () => {
 			</table>
 			{winner && (
 				<>
-					<p className='para2'> {winner} is the winner</p>
+					<p className='para2'> {winner} </p>
 					<button className='btn' onClick={() => handleRestart()}>Play Again</button>
 				</>
 			)}
